@@ -37,7 +37,7 @@ var users=[
         email: 'hassanQ@outlook.com',
         password: bcrypt.hashSync('123456', bcrypt.genSaltSync(5), null),
         name: 'Hassan Qureshi',
-        dateOfBirth: new Date('1990-05-26'),
+        dateOfBirth: new Date('2002-05-08'),
         contactNumber: '0300-4814710',
     }),
     new User({
@@ -51,7 +51,7 @@ var users=[
     }),
 ];
 //save function is asynchronous
-//so we need to ceck all itmes are saved before we disconnect to db
+//so we need to check all itmes are saved before we disconnect to db
 done=0;
 for (i=0;i<users.length;i++){
     users[i].save(function(err,result){
